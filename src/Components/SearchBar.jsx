@@ -9,9 +9,9 @@ function SearchBar({ transactions, setTransactions, things }) {
       });
       if (filtered.length > 0) {
         setTransactions([...filtered]);
-      } else {
-        setTransactions([...things]);
       }
+    } else {
+      setTransactions([...things]);
     }
   }
 

@@ -53,7 +53,10 @@ function App() {
         setTransactions={setTransactions}
         things={things}
       />
-      <TransactionForm />
+      <TransactionForm
+        transactions={transactions}
+        setTransactions={setTransactions}
+      />
       <TransactionTable transactions={transactions} />
     </div>
   );
