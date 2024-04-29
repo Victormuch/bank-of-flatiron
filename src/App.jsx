@@ -1,11 +1,12 @@
 import { useState } from "react";
 import "../src/App.css";
-import Header from "./Components/Header";
-import SearchBar from "./Components/SearchBar";
-import TransactionForm from "./Components/TransactionForm";
-import TransactionTable from "./Components/TransactionTable";
+import Header from "./Components/Head";
+import SearchBar from "./Components/SearchBa";
+import TransactionForm from "./Components/TransactionF";
+import TransactionTable from "./Components/TransactionT";
 
 function App() {
+  // Sample data for transactions
   const things = [
     {
       date: "2024-12-01",
@@ -44,22 +45,34 @@ function App() {
       amount: "$150",
     },
   ];
+
+  // State for managing transactions
   const [transactions, setTransactions] = useState(things);
+
+  // Return statement containing the JSX structure
   return (
     <div className="">
+      {/* Header component */}
       <Header />
+
+      {/* SearchBar component */}
       <SearchBar
         transactions={transactions}
         setTransactions={setTransactions}
         things={things}
       />
+
+      {/* TransactionForm component */}
       <TransactionForm
         transactions={transactions}
         setTransactions={setTransactions}
       />
+
+      {/* TransactionTable component */}
       <TransactionTable transactions={transactions} />
     </div>
   );
 }
 
+// Exporting the App component
 export default App;
