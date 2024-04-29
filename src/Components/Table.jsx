@@ -7,7 +7,7 @@ function Table({ transactions }) {
 
         <td>{transaction.category}</td>
 
-        <td>{transaction.Amount}</td>
+        <td>{transaction.amount}</td>
       </tr>
     );
   });

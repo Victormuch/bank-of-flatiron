@@ -11,37 +11,37 @@ function App() {
       date: "2024-12-01",
       description: "Movie",
       category: "Entertainment",
-      Amount: "$100",
+      amount: "$100",
     },
     {
       date: "2024-11-02",
       description: "game",
       category: "Gaming",
-      Amount: "$110",
+      amount: "$110",
     },
     {
       date: "2024-10-03",
       description: "Hicking",
       category: "Entertainment",
-      Amount: "$120",
+      amount: "$120",
     },
     {
       date: "2024-09-04",
       description: "Fries",
       category: "Food",
-      Amount: "$130",
+      amount: "$130",
     },
     {
       date: "2024-08-05",
       description: "Swimming",
       category: "Entertainment",
-      Amount: "$140",
+      amount: "$140",
     },
     {
       date: "2024-12-01",
       description: "Check-up",
       category: "Health",
-      Amount: "$150",
+      amount: "$150",
     },
   ];
   const [transactions, setTransactions] = useState(things);
